@@ -1,0 +1,162 @@
+<!-- <h1>{{registrationForm.value | json}}</h1> -->
+
+<div class="bg-black/50 m-auto my-20 rounded-lg w-[1000px] opacity-85">
+  <form class="p-5" [formGroup]="registrationForm">
+    <h1 class="text-4xl font-bold text-white text-center mb-8">Registration Form</h1>
+
+    <div class="my-5 flex">
+      <span class="me-10 text-white"><span class="text-red-600 ">*</span> First Name</span>
+      <div>
+        <input
+          type="text"
+          name="fName"
+          formControlName="fName"
+          class="focus:outline-none focus:ring-2 focus:ring-red-400 w-3xl py-2 px-2 rounded-md focus:border-none
+           bg-gray-900 text-white"
+        />
+        @if(getControls('fName')?.invalid && getControls('fName')?.touched){
+        <div class="text-red-500 bg-amber-50/10 w-fit p-1 text-sm rounded-xs mt-1">
+          @if(getControls('fName')?.errors?.['required']){
+          <p>First name is required!</p>
+          }
+        </div>
+        }
+      </div>
+    </div>
+
+    <div class="my-5 flex">
+      <span class="me-10 text-white"><span class="text-red-600">*</span> Last Name</span>
+      <div>
+        <input
+          type="text"
+          name="lName"
+          formControlName="lName"
+          class="focus:outline-none focus:ring-2 focus:ring-red-400 w-3xl py-2 px-2 rounded-md focus:border-none
+           bg-gray-900 text-white"
+        />
+        @if(getControls('lName')?.invalid && getControls('lName')?.touched){
+        <div class="text-red-500 bg-amber-50/10 w-fit p-1 text-sm rounded-xs mt-1">
+          @if(getControls('lName')?.errors?.['required']){
+          <p>Last name is required!</p>
+          }
+        </div>
+        }
+      </div>
+    </div>
+
+    <div class="my-5 flex">
+      <span class="me-20 text-white"><span class="text-red-600">*</span> Email</span>
+      <div>
+        <input
+          type="email"
+          name="email"
+          formControlName="email"
+          class="focus:outline-none focus:ring-2 focus:ring-red-400 w-3xl py-2 px-2 rounded-md focus:border-none
+           bg-gray-900 text-white"
+          placeholder="Example@gmail.com"
+        />
+        @if(getControls('email')?.invalid && getControls('email')?.touched){
+        <div class="text-red-500 bg-amber-50/10 w-fit p-1 text-sm rounded-xs mt-1">
+          @if(getControls('email')?.errors?.['required']){
+          <p>Email is required!</p>
+          } @if(getControls('email')?.errors?.['email']){
+          <p>Email is not valid!</p>
+          }
+        </div>
+        }
+      </div>
+    </div>
+
+    <div class="my-5 flex">
+      <div formArrayName="phone">
+        <div *ngFor="let ph of phone.controls; let i = index">
+          <span class="me-13 text-white"><span class="text-red-600">*</span> #{{i + 1}} Phone</span>
+          <input
+            type="text"
+            name="phone"
+            [formControlName]="i"
+            class="focus:outline-none focus:ring-2 focus:ring-red-400 w-3xl py-2 px-2 rounded-md focus:border-none
+           bg-gray-900 text-white"
+          />
+  
+          <button *ngIf="i != 0" class="bg-red-500 text-white py-2 px-4 cursor-pointer ms-2 rounded-md font-bold 
+          hover:from-red-600 hover:to-black transition-all shadow-md my-2" (click)="removeInput(i)">-</button>
+  
+          @if(ph?.invalid && ph?.touched){
+          <div class="text-red-500 bg-amber-50/10 w-fit p-1 text-sm rounded-xs mt-1ms-33">
+            @if(ph?.errors?.['required']){
+            <p>Phone is required!</p>
+            } @if(ph?.errors?.['pattern']){
+            <p>Phone Number is number only!</p>
+            }
+          </div>
+          }
+        </div>
+          <button class="bg-gradient-to-r from-red-500 to-black text-white py-2 px-4 cursor-pointer ms-2 rounded-md font-bold 
+          hover:from-red-600 hover:to-black transition-all shadow-md my-2" (click)="addNewInput()">+</button>
+      </div>
+    </div>
+
+    <div class="my-5 flex">
+      <span class="me-10 text-white"><span class="text-red-600">*</span> Country</span>
+      <div class="ms-5">
+        <select
+        class="focus:outline-none focus:ring-2 focus:ring-red-400 w-3xl py-2 px-2 rounded-md focus:border-none
+        bg-gray-900 text-white"
+          formControlName="countries"
+        >
+          <option value="" selected>Select Your Country</option>
+          <option value="egypt">Egypt</option>
+          <option value="russian">Russian</option>
+          <option value="moscow">Moscow</option>
+        </select>
+        @if(getControls('countries')?.invalid && getControls('countries')?.touched){
+        <div class="text-red-500 bg-amber-50/10 w-fit p-1 text-sm rounded-xs mt-1">
+          <p>Dropdown list is required!</p>
+        </div>
+        }
+      </div>
+    </div>
+
+    <div class="my-5 flex gap-6">
+      <span class="me-10 text-white"><span class="text-red-600">*</span> Gender</span>
+      <label class="flex items-center gap-2">
+        <input
+          type="radio"
+          class="w-5 h-5 rounded-md cursor-pointer"
+          name="gender"
+          formControlName="gender"
+          value="male"
+        />
+        <span class="cursor-pointer text-white">Male</span>
+      </label>
+
+      <label class="flex items-center gap-2">
+        <input
+          type="radio"
+          class="w-5 h-5 rounded-md cursor-pointer"
+          name="gender"
+          formControlName="gender"
+          value="female"
+        />
+        <span class="cursor-pointer text-white">Female</span>
+      </label>
+      @if(getControls('gender')?.invalid && getControls('gender')?.touched){
+      <div class="text-red-500 bg-amber-50/10 w-fit p-1 text-sm rounded-xs mt-1">
+        <p>Gender is required</p>
+      </div>
+      }
+    </div>
+
+    <div class="flex justify-center">
+      <button
+        class="w-2xs cursor-pointer text-white font-bold py-2 px-6 rounded-lg hover:bg-red-600 hover:shadow-lg duration-200
+        bg-gradient-to-r from-red-500 to-black ms-2  
+        hover:from-red-600 hover:to-black transition-all shadow-md"
+        (click)="register()"
+      >
+        Register
+      </button>
+    </div>
+  </form>
+</div>

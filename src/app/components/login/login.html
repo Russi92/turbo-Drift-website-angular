@@ -1,0 +1,75 @@
+<section class="mt-15 flex  justify-center">
+    <div class="bg-black/50 backdrop-blur-md h-fit p-10 rounded-2xl w-[1000px] shadow-xl">
+      
+      <h1 class="text-4xl font-bold text-white text-center mb-8">Log In</h1>
+      
+      <form class="space-y-6" [formGroup]="loginForm">
+        
+        <div>
+          <input 
+            type="email"
+            placeholder="Enter your email"
+            class="w-full px-4 py-3 rounded-lg bg-gray-900 text-white placeholder-gray-400 focus:ring-2 focus:ring-red-500 outline-none"
+            name="email"
+            formControlName="email"
+          />
+          <!-- error msg -->
+          @if(email?.invalid && email?.touched){
+              <div class="text-red-500 bg-amber-50/10 w-fit p-2 rounded-xs mt-2 text-sm">
+                @if(email?.errors?.['required']){
+                    <p>Email is required!</p>
+                }
+                @if(email?.errors?.['email']){
+                    <p>Email Not Valid!</p>
+                }
+              </div>
+          }
+          <!-- error msg -->
+        </div>
+        
+        <div>
+          <input 
+            type="password" 
+            id="password"
+            placeholder="Enter your password"
+            class="w-full px-4 py-3 rounded-lg bg-gray-900 text-white placeholder-gray-400 focus:ring-2 focus:ring-red-500 outline-none"
+            name="password"
+            formControlName="password"
+          />
+          <!-- error msg -->
+          @if(password?.invalid && password?.touched){
+              <div class="text-red-500 bg-amber-50/10 w-fit p-2 rounded-xs mt-2 text-sm">
+                @if(password?.errors?.['required']){
+                    <p>Password is required</p>
+                }
+              </div>
+          }
+          <!-- error msg -->
+        </div>
+        
+        <div class="flex justify-between items-center text-gray-400 text-sm">
+          <label class="flex items-center space-x-2">
+            <input type="checkbox" class="form-checkbox h-4 w-4 text-red-500"/>
+            <span>Remember me</span>
+          </label>
+          <a href="#" class="hover:text-white">Forgot password?</a>
+        </div>
+
+        <div class="flex justify-center">
+            <button 
+              type="submit" 
+              class="w-2xs cursor-pointer text-white font-bold py-2 px-6 rounded-lg hover:bg-red-600 hover:shadow-lg duration-200
+              bg-gradient-to-r from-red-500 to-black ms-2  
+              hover:from-red-600 hover:to-black transition-all shadow-md" (click)="login()"
+            >
+              Login
+            </button>
+        </div>
+      </form>
+      
+      <p class="text-gray-400 text-center mt-6">
+        Don't have an account? 
+        <a routerLink="/register" class="text-red-500 font-semibold hover:underline cursor-pointer">Register</a>
+      </p>
+    </div>
+  </section>
