@@ -6,6 +6,7 @@ import { Login } from './components/login/login';
 import { ContactUs } from './components/contact-us/contact-us';
 import { About } from './components/about/about';
 import { Cars } from './components/cars/cars';
+import { NotFound } from './components/not-found/not-found';
 
 export const routes: Routes = [
     {path : '' , redirectTo : 'home' , pathMatch:'full'},
@@ -16,4 +17,5 @@ export const routes: Routes = [
     {path : 'contactUs', component : ContactUs},
     {path : 'logIn', component : Login},
     {path : 'register' , component : Register},
+    {path : '**', component : NotFound}
 ];
