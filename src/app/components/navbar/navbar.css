@@ -1,8 +1,9 @@
 .active{
-    background-color: white;
+    /* background-color: white; */
+    background: linear-gradient(to right, #ef4444, #000);
     width: fit-content;
     height: fit-content;
-    padding: 3px;
-    color: black;
+    padding: 5px;
+    color: white;
     opacity: 0.8;
 }
