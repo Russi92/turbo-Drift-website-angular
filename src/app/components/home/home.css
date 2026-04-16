@@ -10,6 +10,6 @@
   }
 }
 .fade-slide-up {
-  animation: fadeSlideUp 1s ease-out forwards;
+  animation: fadeSlideUp 5s ease-out forwards;
 }
 

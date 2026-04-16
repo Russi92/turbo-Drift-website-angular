@@ -17,6 +17,7 @@ export class Register {
       fName : ['', [Validators.required]],
       lName : ['', [Validators.required]],
       email : ['', [Validators.required, Validators.email]],
+      password : ['', [Validators.required]],
       // phone : ['', [Validators.required, Validators.pattern('^[0-9]+$')]],
       phone : fb.array([['', [Validators.required, Validators.pattern('^[0-9]+$')]]]),
       countries : ['', Validators.required],

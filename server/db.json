@@ -1,0 +1,174 @@
+{
+  "newCars": [
+    {
+      "id": 1,
+      "name": "Bmw M4",
+      "model": 2026,
+      "price": 100000,
+      "description": "The BMW M4 combines luxury and raw performance with a twin-turbo engine, sharp handling, and a bold design, making it one of the most thrilling sports cars in its class.",
+      "img": "https://bringatrailer.com/wp-content/uploads/2026/02/2026_bmw_m4_002-exterior_bmw_m4-competition-coupe-35059.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Mercedes c200",
+      "model": 2006,
+      "price": 200000,
+      "description": "The Mercedes C200 combines premium comfort with advanced technology and a sleek design, making it an ideal choice for those who seek both performance and everyday luxury.",
+      "img": "https://mwmotors.net/wp-content/uploads/2025/11/01-2026-Mercedes-Benz-C200-Black-Tan-925x616.webp"
+    },
+    {
+      "id": 3,
+      "name": "Toyota Corolla",
+      "model": 2026,
+      "price": 50000,
+      "description" : "The Toyota Corolla is a reliable and fuel-efficient sedan, offering a comfortable ride, modern features, and exceptional durability for everyday driving.",
+      "img": "https://sayaratelyoum.com/wp-content/uploads/2020/04/image-4.png"
+    },
+    {
+      "id": 4,
+      "name": "Jetour",
+      "model": 2026,
+      "price": 1000000,
+      "description" : "Jetour delivers a modern SUV experience with bold design, advanced technology, and spacious comfort, making it perfect for both city drives and long journeys.",
+      "img": "https://i.ytimg.com/vi/SaW7Xj6Sbts/maxresdefault.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Jeep Cherokee",
+      "model": 2026,
+      "price": 1500000,
+      "description" : "The Jeep Cherokee is built for adventure, combining rugged off-road capability with refined comfort and advanced safety features for every journey.",
+      "img": "https://media.ed.edmunds-media.com/jeep/grand-cherokee/2025/oem/2025_jeep_grand-cherokee_4dr-suv_overland_fq_oem_1_1600.jpg"
+    },
+    {
+      "id": 6,
+      "name": "BMW X6",
+      "model": 2026,
+      "price": 500000,
+      "description" : "The BMW X6 is a luxury SUV coupe that blends powerful performance with a bold, sporty design, delivering a dynamic and premium driving experience.",
+      "img": "https://hips.hearstapps.com/hmg-prod/images/2024-bmw-x6-101-680662bd25357.jpeg?crop=0.825xw:0.624xh;0.175xw,0.316xh&resize=1200:*"
+    },
+    {
+      "id": 7,
+      "name": "Ford Mustang",
+      "model": 2026,
+      "price": 800000,
+      "description" : "The Ford Mustang is an iconic muscle car known for its aggressive performance, powerful engine, and timeless design that defines true driving excitement.",
+      "img": "https://topgearbox.com/wp-content/uploads/2026/01/2026_mustang_dark_horse_sc_7_6033-xn0q.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Seat Leon",
+      "model": 2026,
+      "price": 400000,
+      "description" : "The Seat Leon offers a sporty and stylish design with efficient performance and modern technology, making it a perfect choice for everyday driving.",
+      "img": "https://www.gtopcars.com/wp-content/uploads/2025/10/2026-SEAT-Leon-Facelift.jpg"
+    },
+    {
+      "id": 9,
+      "name": "peugeot 3008",
+      "model": 2026,
+      "price": 900000,
+      "description" : "The Peugeot 3008 stands out with its futuristic design, advanced technology, and comfortable interior, delivering a smooth and refined SUV experience.",
+      "img": "https://www.topgear.com/sites/default/files/2024/09/PEUGEOT_3008_EXT_13.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Mercedes E300",
+      "model": 2026,
+      "price": 2000000,
+      "description" : "The Mercedes E300 delivers executive luxury with powerful performance, advanced technology, and a sophisticated design for a truly premium driving experience.",
+      "img": "https://dataapi.autoplay.co.nz/image.ashx?id=91380490&w=1152&q=80&compress=true"
+    }
+  ],
+  "usedCars" : [
+    {
+      "id" : 1,
+      "name" : "Fiat Tipo",
+      "model" : 2015,
+      "price" : 150000,
+      "description" : "Reliable and practical, the Fiat Tipo offers a comfortable driving experience with efficient fuel consumption, making it an excellent choice for daily commuting and family use.",
+      "img" : "https://media.elbalad.news/2024/10/large/934/4/630.jpg"
+    },
+
+    {
+      "id" : 2,
+      "name" : "New Optra",
+      "model" : 2016,
+      "price" : 200000,
+      "description" : "The new Optra delivers a balanced mix of affordability, modern design, and smooth performance, ideal for drivers looking for a stylish yet budget-friendly sedan",
+      "img" : "https://media.gemini.media/img/original/2016/5/18/2016_5_18_19_5_23_216.jpg"
+    },
+
+    {
+      "id" : 3,
+      "name" : "Jeep Liberty",
+      "model" : 2007,
+      "price" : 500000,
+      "description" : "A rugged SUV built for adventure, the Jeep Liberty combines off-road capability with a spacious interior, perfect for both city drives and outdoor exploration.",
+      "img" : "https://www.edmunds.com/assets/m/jeep/liberty/2007/oem/2007_jeep_liberty_4dr-suv_sport_fq_oem_2_600.jpg"
+    },
+
+    {
+      "id" : 4,
+      "name" : "Porsche 911 Gt3",
+      "model" : 2015,
+      "price" : 1000000,
+      "description" : "A track-focused masterpiece, the Porsche 911 GT3 delivers extreme precision, high-revving performance, and aerodynamic excellence for pure driving enthusiasts.",
+      "img" : "https://www.marshallgoldman.com/imagetag/707/2/l/Used-2015-Porsche-911-GT3-1600284549.jpg"
+    },
+
+    {
+      "id" : 5,
+      "name" : "Ferrari sf90",
+      "model" : 2018,
+      "price" : 2000000,
+      "description" : "The Ferrari SF90 is a hybrid hypercar that combines electrification with raw power, delivering breathtaking acceleration and cutting-edge technology.",
+      "img" : "https://res.cloudinary.com/unix-center/image/upload/c_limit,dpr_3.0,f_auto,fl_progressive,g_center,h_580,q_75,w_906/fl7hxq9rczontkgsvvw0.jpg"
+    },
+
+    {
+      "id" : 6,
+      "name" : "Mclaren 720s",
+      "model" : 2020,
+      "price" : 3000000,
+      "description" : "Lightweight and incredibly fast, the McLaren 720S offers exceptional aerodynamics and unmatched performance, making it one of the most thrilling supercars on the road.",
+      "img" : "https://hips.hearstapps.com/hmg-prod/images/mclaren-720s-black-by-mansory-1640341441.jpg"
+    },
+    {
+      "id" : 7,
+      "name" : "BMW X6",
+      "model" : 2022,
+      "price" : 2500000,
+      "description" : "A luxury SUV with a sporty coupe design, the BMW X6 blends performance, elegance, and advanced technology for a premium driving experience.",
+      "img" : "https://i.ytimg.com/vi/kwv_7OVDth8/maxresdefault.jpg"
+    },
+
+    {
+      "id" : 8,
+      "name" : "Rolls Royce",
+      "model" : 2021,
+      "price" : 2500000,
+      "description" : "The definition of ultimate luxury, Rolls-Royce vehicles provide unmatched comfort, handcrafted interiors, and a whisper-quiet driving experience.",
+      "img" : "https://saudishift.com/wp-content/uploads/2020/09/2021-Rolls-ROyce-Ghost-2.jpg"
+    },
+
+    {
+      "id" : 9,
+      "name" : "Dodge Challenger",
+      "model" : 2019,
+      "price" : 3500000,
+      "description" : "A true American muscle car, the Dodge Challenger delivers powerful engine options, aggressive styling, and an exhilarating driving experience.",
+      "img" : "https://di-uploads-pod11.dealerinspire.com/stevelanderschryslerdodgejeepram/uploads/2017/07/DG018_036CLul7gbtg3iqneobqm1lk3178ng4__mid.jpg"
+    },
+
+    {
+      "id" : 10,
+      "name" : "Nissan Gtr R34",
+      "model" : 2013,
+      "price" : 4500000,
+      "description" : "An iconic legend in the automotive world, the Nissan GT-R R34 is known for its performance, tuning potential, and dominance in both street and track culture.",
+      "img" : "https://s1.cdn.autoevolution.com/images/news/r34-nissan-gt-r-looks-like-a-nismo-supercar-in-glossy-widebody-rendering-158511_1.jpg"
+    }
+  ]
+}

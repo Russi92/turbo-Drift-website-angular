@@ -68,6 +68,26 @@
     </div>
 
     <div class="my-5 flex">
+      <span class="me-12 text-white"><span class="text-red-600">*</span> Password</span>
+      <div>
+        <input
+          type="password"
+          name="password"
+          formControlName="password"
+          class="focus:outline-none focus:ring-2 focus:ring-red-400 w-3xl py-2 px-2 rounded-md focus:border-none
+           bg-gray-900 text-white"
+           />
+        @if(getControls('password')?.invalid && getControls('password')?.touched){
+        <div class="text-red-500 bg-amber-50/10 w-fit p-1 text-sm rounded-xs mt-1">
+          @if(getControls('password')?.errors?.['required']){
+          <p>Password is required!</p>
+          } 
+        </div>
+        }
+      </div>
+    </div>
+
+    <div class="my-5 flex">
       <div formArrayName="phone">
         <div *ngFor="let ph of phone.controls; let i = index">
           <span class="me-13 text-white"><span class="text-red-600">*</span> #{{i + 1}} Phone</span>

@@ -32,51 +32,22 @@
     </div>
   </div>
 
-  <!-- section Featured Cars -->
   <section class="bg-amber-50/10 w-[1500px] m-auto mt-10 rounded-2xl p-8">
     <h2 class="text-3xl text-white font-bold mb-6 text-center">Featured Cars</h2>
   
     <div class="grid grid-cols-3 gap-6">
       
-      <div class="bg-black/40 rounded-xl p-4 text-white">
-        <img src="https://octane.rent/wp-content/uploads/2023/03/bmw-m4-red-2.jpg" class="rounded-lg mb-3 w-full aspect-square object-cover"/>
-        <h3 class="text-xl font-bold">BMW M4</h3>
-        <p class="text-gray-300">High performance sports car</p>
-      </div>
-  
-      <div class="bg-black/40 rounded-xl p-4 text-white">
-        <img src="https://hips.hearstapps.com/hmg-prod/amv-prod-cad-assets/images/09q1/267374/2010-audi-r8-52-v10-fsi-quattro-review-car-and-driver-photo-258862-s-original.jpg?resize=640:*" class="rounded-lg mb-3 w-full aspect-square object-cover"/>
-        <h3 class="text-xl font-bold">Audi R8</h3>
-        <p class="text-gray-300">Luxury meets speed</p>
-      </div>
-  
-      <div class="bg-black/40 rounded-xl p-4 text-white">
-        <img src="https://arabgt.com/wp-content/uploads/2025/05/%D8%B3%D9%8A%D8%A7%D8%B1%D8%A9-gt-63-2026-.jpeg" class="rounded-lg mb-3 w-full aspect-square object-cover"/>
-        <h3 class="text-xl font-bold">Mercedes AMG</h3>
-        <p class="text-gray-300">Power & elegance</p>
-      </div>
-
-      <div class="bg-black/40 rounded-xl p-4 text-white">
-        <img src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/10354297/20180306_volvov60_vladsavov12.jpg?quality=90&strip=all" class="rounded-lg mb-3 w-full aspect-square object-cover"/>
-        <h3 class="text-xl font-bold">Volvo V60</h3>
-        <p class="text-gray-300">High performance</p>
-      </div>
-
-      <div class="bg-black/40 rounded-xl p-4 text-white">
-        <img src="https://cdn.shopify.com/s/files/1/1679/6063/files/ferrari-f40-tribute-render_1024x1024.jpg?v=1542207155" class="rounded-lg mb-3 w-full aspect-square object-cover"/>
-        <h3 class="text-xl font-bold">Ferrari F40</h3>
-        <p class="text-gray-300">High performance sports car</p>
-      </div>
-      
-      <div class="bg-black/40 rounded-xl p-4 text-white">
-        <img src="https://hips.hearstapps.com/hmg-prod/amv-prod-cad-assets/images/16q2/667349/2016-lamborghini-aventador-lp750-4-superveloce-test-review-car-and-driver-photo-667354-s-original.jpg?resize=640:*" class="rounded-lg mb-3 w-full aspect-square object-cover"/>
-        <h3 class="text-xl font-bold">Lamborghini Aventador</h3>
-        <p class="text-gray-300">Power & elegance</p>
-      </div>
+      @for(fCars of featuredCars; track fCars.id){
+        <div></div>
+        <div class="bg-black/40 rounded-xl p-4 text-white">
+          <img [ngSrc]="fCars.img" width="300" height="300" class="rounded-lg mb-3 w-full aspect-square object-cover"/>
+          <h3 class="text-xl font-bold">{{fCars.name}}</h3>
+          <p class="text-gray-300">{{fCars.description}}</p>
+        </div>
+      }
 
     </div>
   </section>
-  <!-- section Featured Cars -->
 
   <section class="w-[1500px] m-auto mt-16 bg-amber-50/10 text-white rounded-2xl p-10">
     <h2 class="text-3xl font-bold text-center mb-8">What Our Customers Say</h2>
