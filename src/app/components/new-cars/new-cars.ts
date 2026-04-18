@@ -1,9 +1,10 @@
-import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Router, RouterLink } from "@angular/router";
 import { ApiNewCars } from '../../services/api-new-cars';
 import { InewCars } from '../../models/inew-cars';
 import { CurrencyPipe, NgOptimizedImage, NgFor} from '@angular/common';
 import { FormsModule } from '@angular/forms';
+
 
 @Component({
   selector: 'app-new-cars',
@@ -12,22 +13,24 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './new-cars.css',
 })
 export class NewCars implements OnInit{
-
+@Input() userName=''
   searchText = '';
 
   // newCars : InewCars[] = [] as InewCars[];
 
   newCars: InewCars[] = [];
-  
+
   filteredCars : InewCars[] = [];
+
 
   constructor(private _ApiNewCars : ApiNewCars,
               private router : Router,
-              // private cdr : ChangeDetectorRef      
+              // private cdr : ChangeDetectorRef
     ){}
 
+
   ngOnInit(): void {
-    
+
     this._ApiNewCars.getAllNewCars().subscribe({
       next : (res) =>{
         console.log(res);
@@ -52,7 +55,8 @@ export class NewCars implements OnInit{
        return;
     }
     this.filteredCars = this.newCars.filter(car => {
-      return car.name.toLowerCase().includes(this.searchText.toLowerCase())
+      return car.brand.toLowerCase().includes(this.searchText.toLowerCase())
     })
   }
+
 }

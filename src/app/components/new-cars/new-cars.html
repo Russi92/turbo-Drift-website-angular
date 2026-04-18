@@ -16,51 +16,57 @@
     />
   </div>
 
-
-
-    <div class="max-w-[1400px] mx-auto px-4 py-10">
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div *ngFor="let nCars of filteredCars">
-          <div
-            class="bg-white/5 backdrop-blur-lg rounded-2xl overflow-hidden shadow-lg hover:shadow-red-500/30 transition-all duration-300 group"
-          >
-            <div class="h-[220px] overflow-hidden">
-              <img
-                [ngSrc]="nCars.img"
-                alt=""
-                width="300"
-                height="300"
-                class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
-              />
-            </div>
-  
-            <div class="p-5 text-white">
-              <h2 class="text-2xl font-bold mb-2 group-hover:text-red-500 transition">
-                {{ nCars.name }}
-              </h2>
-  
-              <p class="text-gray-300 text-sm mb-3 line-clamp-2">
-                {{ nCars.description }}
-              </p>
-  
-              <div class="text-gray-400 text-sm mb-2">Model: {{ nCars.model }}</div>
-  
-              <div class="text-xl font-bold text-red-500 mb-4">
-                {{ nCars.price | currency : 'EUR' : 'symbol' : '1.0-0' }}
-              </div>
-  
-              <button
-                (click)="logIn()"
-                class="w-full py-2 rounded-lg font-bold bg-gradient-to-r from-red-500 to-black hover:from-red-600 hover:to-black transition-all duration-300 shadow-md cursor-pointer"
-              >
-                Buy Now
-              </button>
-            </div>
-          </div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 my-4">
+    @for (nCars of filteredCars; track nCars.id) {
+      <div
+        class="bg-white/5 backdrop-blur-lg rounded-2xl overflow-hidden shadow-lg hover:shadow-red-500/30 transition-all duration-300 group"
+      >
+        <div class="h-[220px] overflow-hidden">
+          <img
+            [ngSrc]="nCars.img"
+            alt=""
+            width="300"
+            height="300"
+            class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+          />
         </div>
-        
+
+        <div class="p-5 text-white">
+          <h2 class="text-2xl font-bold mb-2 group-hover:text-red-500 transition">
+            {{ nCars.brand }} {{ nCars.name }}
+          </h2>
+
+          <p class="text-gray-300 text-sm mb-3 line-clamp-2">
+            {{ nCars.description }}
+          </p>
+
+          <div class="text-gray-400 text-sm mb-2">Model: {{ nCars.model }}</div>
+
+          <div class="text-xl font-bold text-red-500 mb-4">
+            {{ nCars.price | currency: 'EUR' : 'symbol' : '1.0-0' }}
+          </div>
+
+          <div class="text-sm mb-2 text-red-500 group-hover:scale-105 transition duration-75">
+            <a [routerLink]="['/more-details', nCars.id]"> More details -> </a>
+          </div>
+
+          <button
+            (click)="logIn()"
+            class="w-full py-2 rounded-lg font-bold bg-gradient-to-r from-red-500 to-black hover:from-red-600 hover:to-black transition-all duration-300 shadow-md cursor-pointer"
+          >
+            Buy Now
+          </button>
+        </div>
       </div>
-    </div>
- 
-  
+    } @empty {
+      <div class="flex justify-center">
+        <div
+          class="p-5 rounded-2xl w-96 bg-gradient-to-r from-red-500 to-black font-semibold text-center"
+        >
+          <h1>Car Not Available</h1>
+        </div>
+      </div>
+    }
+  </div>
 </section>
+<div class="text-white">{{ userName }}</div>

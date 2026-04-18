@@ -10,12 +10,15 @@ import { NotFound } from './components/not-found/not-found';
 import { NewCars } from './components/new-cars/new-cars';
 import { UsedCars } from './components/used-cars/used-cars';
 import { ForgotPassword } from './components/forgot-password/forgot-password';
+import { TotalPriceCar } from './components/total-price-car/total-price-car';
+import { Details } from './components/details/details';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: Home },
   { path: 'service', component: Service },
-  {path: 'cars',
+  {
+    path: 'cars',
     children: [
       {
         path: '',
@@ -27,16 +30,18 @@ export const routes: Routes = [
         loadComponent: () => import('./components/new-cars/new-cars').then((m) => m.NewCars),
       },
       {
-        path : 'usedCars', loadComponent : () => import('./components/used-cars/used-cars').then((m) => m.UsedCars)
+        path: 'usedCars', loadComponent: () => import('./components/used-cars/used-cars').then((m) => m.UsedCars)
       }
     ],
   },
-  // {path : 'cars/newCars', component : NewCars},
-  // {path : 'cars/usedCars', component : UsedCars},
+  { path: 'more-details/:id', component: Details },
+  { path: 'cars/newCars', component: NewCars },
+  { path: 'cars/usedCars', component: UsedCars },
   { path: 'about', component: About },
   { path: 'contactUs', component: ContactUs },
   { path: 'logIn', component: Login },
   { path: 'forgotPassword', component: ForgotPassword },
   { path: 'register', component: Register },
+  { path: 'total-price', component: TotalPriceCar },
   { path: '**', component: NotFound },
 ];

@@ -1,35 +1,42 @@
-<section class="bg-gray-900 text-white min-h-screen p-6">
+<section class="bg-gray-900 text-white min-h-screen p-4 sm:p-6">
   <div
-    class="h-[300px] flex flex-col justify-center items-center bg-gradient-to-r from-red-700 via-red-600 to-black rounded-xl mb-12"
+    class="h-[200px] sm:h-[250px] lg:h-[300px] flex flex-col justify-center items-center bg-gradient-to-r from-red-700 via-red-600 to-black rounded-xl mb-12 text-center px-4"
   >
-    <h1 class="text-5xl font-extrabold mb-2">Our Premium Cars</h1>
-    <p class="text-gray-200 text-lg">Drive the car of your dreams with Turbo & Drift</p>
+    <h1 class="text-2xl sm:text-3xl lg:text-5xl font-extrabold mb-2">
+      Our Premium Cars
+    </h1>
+    <p class="text-gray-200 text-sm sm:text-base lg:text-lg">
+      Drive the car of your dreams with Turbo & Drift
+    </p>
   </div>
 
-  <div class="my-10 flex justify-center">
-    <div class="flex bg-gradient-to-r from-red-500 to-black p-2 rounded-2xl shadow-lg gap-2">
+  <div class="my-10 flex justify-center px-4">
+    <div class="flex flex-col sm:flex-row bg-gradient-to-r from-red-500 to-black p-2 rounded-2xl shadow-lg gap-2 w-full max-w-[400px] sm:max-w-fit">
       <a
         routerLink="newCars"
-        class="px-6 py-2 rounded-xl font-bold text-white cursor-pointer transition-all duration-300 hover:bg-gray-800 hover:text-white shadow-md"
+        class="px-6 py-2 text-center rounded-xl font-bold text-white cursor-pointer transition-all duration-300 hover:bg-gray-800 shadow-md"
       >
         New Cars
       </a>
-      <div class="w-[2px] h-8 bg-gradient-to-b from-white to-white rounded-full"></div>
+
+      <div class="hidden sm:block w-[2px] h-8 bg-white rounded-full"></div>
+
       <a
         routerLink="usedCars"
-        class="px-6 py-2 rounded-xl font-bold text-gray-300 cursor-pointer transition-all duration-300 hover:bg-gray-800 hover:text-white"
+        class="px-6 py-2 text-center rounded-xl font-bold text-gray-300 cursor-pointer transition-all duration-300 hover:bg-gray-800 hover:text-white"
       >
         Used Cars
       </a>
     </div>
   </div>
 
-  <div class="w-[1200px] m-auto flex flex-col md:flex-row justify-between items-center mb-12 gap-4">
+  <div class="w-full max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-center mb-12 gap-4 px-4">
     <input
       type="text"
       placeholder="Search for cars..."
       class="px-4 py-2 w-full md:w-[350px] outline-none shadow-lg rounded-lg bg-amber-50 focus:text-black placeholder-gray-400 focus:ring-2 focus:ring-red-500"
     />
+
     <select class="px-4 py-2 rounded-xl bg-amber-50 text-black w-full md:w-[500px] shadow-lg">
       <option>All Brands</option>
       <option>BMW</option>
@@ -38,11 +45,11 @@
     </select>
   </div>
 
-  <div class="w-[1200px] m-auto grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+  <div class="w-full max-w-[1200px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 px-4">
     <div
       class="relative bg-gray-800 rounded-3xl overflow-hidden shadow-xl group hover:scale-105 transition transform duration-300"
     >
-      <div class="relative h-[250px] overflow-hidden">
+      <div class="relative h-[200px] sm:h-[220px] lg:h-[250px] overflow-hidden">
         <img
           src="https://cimg3.ibsrv.net/ibimg/hgm/1920x1080-1/100/749/2021-bmw-5-series_100749427.jpg"
           class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
@@ -57,39 +64,44 @@
         </div>
       </div>
 
-      <div class="p-6">
-        <h2 class="text-2xl font-bold mb-2">BMW M5</h2>
-        <p class="text-gray-300 mb-4">Luxury sports sedan with top performance & advanced tech.</p>
+      <div class="p-4 sm:p-6">
+        <h2 class="text-lg sm:text-xl lg:text-2xl font-bold mb-2">BMW M5</h2>
+        <p class="text-gray-300 mb-4 text-sm sm:text-base">
+          Luxury sports sedan with top performance & advanced tech.
+        </p>
 
-        <div class="flex justify-between text-sm text-gray-400 mb-4">
+        <div class="flex flex-wrap justify-between text-xs sm:text-sm text-gray-400 mb-4 gap-2">
           <span>⚡ 600 HP</span>
           <span>⛽ Petrol</span>
           <span>🚀 0-100: 3.4s</span>
         </div>
 
         <div class="flex justify-between items-center">
-          <p class="text-red-500 font-bold text-lg">$150/day</p>
+          <p class="text-red-500 font-bold text-base sm:text-lg">$150/day</p>
           <button
-            class="bg-gradient-to-r from-red-500 to-black px-4 py-2 rounded-xl font-bold hover:scale-105 transition"
+            class="bg-gradient-to-r from-red-500 to-black px-3 sm:px-4 py-2 rounded-xl font-bold hover:scale-105 transition text-sm sm:text-base"
           >
             Rent Now
           </button>
         </div>
       </div>
     </div>
-
-    <!-- كرر الكارت لكل عربية -->
   </div>
 
   <!-- CTA Banner -->
   <div
-    class="w-[1200px] m-auto mt-16 p-10 rounded-3xl bg-gradient-to-r from-red-600 to-black flex flex-col md:flex-row justify-between items-center gap-4 text-center"
+    class="w-full max-w-[1200px] mx-auto mt-16 p-6 sm:p-8 lg:p-10 rounded-3xl bg-gradient-to-r from-red-600 to-black flex flex-col md:flex-row justify-between items-center gap-4 text-center px-4"
   >
     <div>
-      <h2 class="text-3xl font-bold mb-2">Drive Luxury Today</h2>
-      <p class="text-gray-200">Choose your dream car and hit the road with style.</p>
+      <h2 class="text-xl sm:text-2xl lg:text-3xl font-bold mb-2">
+        Drive Luxury Today
+      </h2>
+      <p class="text-gray-200 text-sm sm:text-base">
+        Choose your dream car and hit the road with style.
+      </p>
     </div>
-    <button class="bg-white text-black px-8 py-3 rounded-xl font-bold hover:bg-gray-200 transition">
+
+    <button class="bg-white text-black px-6 sm:px-8 py-2 sm:py-3 rounded-xl font-bold hover:bg-gray-200 transition">
       Explore Cars
     </button>
   </div>
