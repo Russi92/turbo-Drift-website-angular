@@ -12,43 +12,39 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './used-cars.css',
 })
 export class UsedCars implements OnInit {
-
-searchText='';
+  searchText = '';
 
   usedCars: IusedCars[] = [];
 
-filteredCars:IusedCars[]=[];
+  filteredCars: IusedCars[] = [];
 
-  constructor(private _ApiUsedCars: ApiUsedCars,
-    private router: Router
-  ) { }
+  constructor(private _ApiUsedCars: ApiUsedCars, private router: Router) {}
 
   ngOnInit(): void {
     this._ApiUsedCars.getAllUsedCars().subscribe({
       next: (res) => {
         this.usedCars = res;
-this.filteredCars=res;
+        this.filteredCars = res;
       },
       error: (err) => {
         console.log(err);
-
-      }
-    })
+      },
+    });
   }
 
   logIn() {
-    alert('You are not logIn!!')
-    this.router.navigateByUrl('/logIn')
+    alert('You are not logIn!!');
+    this.router.navigateByUrl('/logIn');
   }
 
-filterCars(){
-if(!this.searchText){
-this.filteredCars=this.usedCars
-return
-}
-
-this.filteredCars=this.usedCars.filter(car => {
-return car.name.toLocaleLowerCase().includes(this.searchText.toLocaleLowerCase())
-})
-}
+  filterCars() {
+    if (!this.searchText) {
+      this.filteredCars = this.usedCars;
+      return;
+    }else{
+      this.filteredCars = this.usedCars.filter((car) => {
+        return car.name.toLocaleLowerCase().includes(this.searchText.toLocaleLowerCase());
+      });
+    }
+  }
 }
