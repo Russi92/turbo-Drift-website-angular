@@ -18,6 +18,8 @@ export class UsedCars implements OnInit {
 
   filteredCars: IusedCars[] = [];
 
+  totalOrderPrice = 0;
+
   constructor(private _ApiUsedCars: ApiUsedCars, private router: Router) {}
 
   ngOnInit(): void {
@@ -46,5 +48,9 @@ export class UsedCars implements OnInit {
         return car.name.toLocaleLowerCase().includes(this.searchText.toLocaleLowerCase());
       });
     }
+  }
+
+  add(count:string , price:number){
+    this.totalOrderPrice += +count * price
   }
 }

@@ -16,6 +16,8 @@ export class NewCars implements OnInit{
 @Input() userName=''
   searchText = '';
 
+  totalOrderPrice=0;
+
   // newCars : InewCars[] = [] as InewCars[];
 
   newCars: InewCars[] = [];
@@ -57,6 +59,12 @@ export class NewCars implements OnInit{
     this.filteredCars = this.newCars.filter(car => {
       return car.brand.toLowerCase().includes(this.searchText.toLowerCase())
     })
+  }
+
+  add(count:string , price:number){
+    this.totalOrderPrice += Number(count) * price
+    // this.totalOrderPrice += +count * price
+    // this.totalOrderPrice += parseInt(count)  * price
   }
 
 }

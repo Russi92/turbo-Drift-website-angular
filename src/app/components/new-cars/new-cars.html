@@ -5,6 +5,8 @@
     <h1 class="text-5xl font-extrabold mb-2 tracking-wide">New Cars Collection</h1>
     <p class="text-gray-300">Discover the latest models with cutting-edge performance</p>
   </div>
+  <div class="text-4xl  bg-gradient-to-r from-red-600/55 to-black mb-12 shadow-xl p-5 rounded-3xl">Total Order Price : 
+    {{totalOrderPrice | currency : 'EUR' : 'symbol' : '1.0-0'}} </div>
 
   <div class="bg-amber-50/60 text-white h-10 mx-auto flex rounded-md px-2">
     <input
@@ -48,6 +50,29 @@
 
           <div class="text-sm mb-2 text-red-500 group-hover:scale-105 transition duration-75">
             <a [routerLink]="['/more-details', nCars.id]"> More details -> </a>
+          </div>
+
+          <div class="max-w-md my-2">
+            <div class="flex items-center shadow-lg rounded-2xl ">
+              
+              <input
+                type="number"
+                placeholder="Enter Quantity"
+                class="flex-1 px-4 py-3 rounded-xl border border-gray-200 
+                       focus:outline-none
+                       bg-white/5 transition-all duration-200
+                       text-white placeholder-gray-400" #countInp
+              />
+          
+              <button
+                class="px-5 py-3 rounded-xl hover:bg-red-400 mx-2 text-white cursor-pointer
+                        active:scale-95 transition-all duration-200 bg-gradient-to-r from-red-600/55 to-black
+                       shadow-md hover:shadow-lg font-bold" (click)="add(countInp.value, nCars.price)"
+              >
+                Add
+              </button>
+          
+            </div>
           </div>
 
           <button
