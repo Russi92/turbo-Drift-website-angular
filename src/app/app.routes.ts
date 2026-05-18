@@ -12,6 +12,7 @@ import { UsedCars } from './components/used-cars/used-cars';
 import { ForgotPassword } from './components/forgot-password/forgot-password';
 import { TotalPriceCar } from './components/total-price-car/total-price-car';
 import { Details } from './components/details/details';
+import { Otp } from './components/otp/otp';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -34,6 +35,7 @@ export const routes: Routes = [
       }
     ],
   },
+  {path:'otp', component:Otp},
   { path: 'more-details/:id', component: Details },
   { path: 'cars/newCars', component: NewCars },
   { path: 'cars/usedCars', component: UsedCars },
