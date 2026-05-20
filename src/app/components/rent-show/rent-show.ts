@@ -25,4 +25,8 @@ export class RentShow implements OnInit{
       }
     })
   }
+  test(){
+    console.log('done');
+    
+  }
 }

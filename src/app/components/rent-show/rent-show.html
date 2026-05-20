@@ -22,20 +22,20 @@
           class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
         />
       </div>
-      <!-- Header -->
+
       <div class="bg-gradient-to-r from-red-500 to-black text-white p-5">
         <div class="flex items-center justify-between">
-            <span class="bg-white/20 px-3 py-1 rounded-full text-lg"> # {{ rShow.id }} </span>
-            
-            <h2 class="text-lg font-bold">{{ rShow.name }}</h2>
+          <span class="bg-white/20 px-3 py-1 rounded-full text-lg"> # {{ rShow.id }} </span>
+
+          <h2 class="text-lg font-bold">{{ rShow.name }}</h2>
         </div>
 
-        <p class="text-sm text-gray-200 mt-1 flex justify-end">Model : {{ rShow.model }} • {{ rShow.type }}</p>
+        <p class="text-sm text-gray-200 mt-1 flex justify-end">
+          Model : {{ rShow.model }} • {{ rShow.type }}
+        </p>
       </div>
 
-      <!-- Body -->
       <div class="p-5 space-y-4">
-        <!-- Price -->
         <div class="flex items-center justify-between">
           <span class="text-gray-500 font-semibold"> Price / Day </span>
 
@@ -44,18 +44,22 @@
           </span>
         </div>
 
-        <!-- Status -->
         <div class="flex items-center justify-between">
           <span class="text-gray-500 font-semibold"> Status </span>
 
           <span class="px-3 py-1 rounded-full bg-gradient-to-r from-red-500 to-black text-white">
-            {{ rShow.available }}
+            {{ rShow.available ? 'Available' : 'Not available right now' }}
           </span>
         </div>
 
-        <!-- Button -->
         <button
-          class="w-full mt-4 px-4 py-3 text-white rounded-xl cursor-pointer bg-gradient-to-r from-red-500 to-black hover:from-red-600 hover:to-black transition-all font-semibold"
+          [disabled]="!rShow.available"
+          class="w-full mt-4 px-4 py-3 text-white rounded-xl 
+                transition-all font-semibold bg-gradient-to-r 
+                from-red-500 to-black hover:from-red-600 
+                hover:to-black disabled:from-gray-400 
+                disabled:to-gray-600 disabled:cursor-not-allowed 
+                cursor-pointer"
         >
           Rent Now
         </button>
