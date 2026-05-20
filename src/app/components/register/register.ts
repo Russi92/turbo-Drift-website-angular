@@ -1,6 +1,7 @@
 import { JsonPipe, NgFor, NgIf } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormArray, FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -11,7 +12,7 @@ import { FormArray, FormBuilder, FormGroup, ReactiveFormsModule, Validators } fr
 })
 export class Register {
   registrationForm : FormGroup
-  constructor(private fb : FormBuilder){
+  constructor(private fb : FormBuilder, private router : Router){
 
     this.registrationForm = fb.group({
       fName : ['', [Validators.required]],
@@ -44,10 +45,13 @@ export class Register {
 
   register(){
     if(this.registrationForm.invalid){
-      return this.registrationForm.markAllAsTouched();
+      this.registrationForm.markAllAsTouched();
+      return
     }else{
-      return console.log(this.registrationForm.value);
-      
+       console.log(this.registrationForm.value);
+       alert('Thanks for registering on the Turbo and Drift website')
+       this.router.navigateByUrl('/home')
+       return
     }
   }
 }

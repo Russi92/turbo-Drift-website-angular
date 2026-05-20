@@ -89,6 +89,24 @@
       "price": 2000000,
       "description": "The Mercedes E300 delivers executive luxury with powerful performance, advanced technology, and a sophisticated design for a truly premium driving experience.",
       "img": "https://dataapi.autoplay.co.nz/image.ashx?id=91380490&w=1152&q=80&compress=true"
+    },
+    {
+      "id": 11,
+      "name": "508 GT-MAX",
+      "brand": "Peugeot",
+      "model": 2026,
+      "price": 2000000,
+      "description": "The 2026 Peugeot 508 is a premium, striking fastback sedan that blends French luxury with dynamic performance.",
+      "img": "https://legion-images.hatla2ee.com/original_image/e991afd0-9f16-4820-b5f3-14374c17a159/large.jpg"
+    },
+    {
+      "id": 12,
+      "name": "T2",
+      "brand": "Jetour",
+      "model": 2026,
+      "price": 1500000,
+      "description": "The Jetour T2 2026 is a rugged, adventure-ready mid-size SUV that blends hardcore off-road styling with modern tech",
+      "img": "https://imagecdn.zigwheels.ae/large/gallery/exterior/111/1900/jetour-t2-51435.jpg"
     }
   ],
   "usedCars": [
@@ -179,6 +197,294 @@
       "price": 4500000,
       "description": "An iconic legend in the automotive world, the Nissan GT-R R34 is known for its performance, tuning potential, and dominance in both street and track culture.",
       "img": "https://s1.cdn.autoevolution.com/images/news/r34-nissan-gt-r-looks-like-a-nismo-supercar-in-glossy-widebody-rendering-158511_1.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Peugeot 508 Gt-Max ",
+      "model": 2022,
+      "price": 1250000,
+      "description": "The 2022 Peugeot 508 GT Max is a premium, sporty fastback sedan that blends striking, aerodynamic design with high-performance",
+      "img": "https://contactcars.fra1.cdn.digitaloceanspaces.com/contactcars-production/Images/Large/Engines/613e0e7ef01b7c9614e113d0_3587c80f-f6c6-41fa-a4ae-64c5ade3df9c.jpeg"
+    },
+    {
+      "id": 12,
+      "name": "Mercedes G500",
+      "model": 2019,
+      "price": 1850000,
+      "description": "The 2019 Mercedes-Benz G500 (marketed as the G550 in North America) blends iconic, utilitarian styling with S-Class levels of luxury and supreme off-road capability.",
+      "img": "https://images.dubizzle.com.eg/thumbnails/166750748-400x300.jpeg"
+    }
+  ],
+  "rentShow": [
+    {
+      "id": 1,
+      "name": "Toyota Corolla",
+      "model": 2022,
+      "type": "Sedan",
+      "priceDay": 1200,
+      "available": true,
+      "img": "https://media.drive.com.au/obj/tx_q:50,rs:auto:1920:1080:1/driveau/upload/cms/uploads/axcnvhlicindywtl0kag"
+    },
+    {
+      "id": 2,
+      "name": "Hyundai Elantra",
+      "model": 2023,
+      "type": "Sedan",
+      "priceDay": 1300,
+      "available": true,
+      "img": "https://autoimage.capitalone.com/cms/Auto/assets/images/2661-hero-2023-Hyundai-Elantra-Hybrid-Limited-Blue-Front-Quarter.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Kia Sportage",
+      "model": 2021,
+      "type": "SUV",
+      "priceDay": 2000,
+      "available": false,
+      "img": "https://cdn.motor1.com/images/mgl/133GM/s1/4x3/2022-kia-sportage.webp"
+    },
+    {
+      "id": 4,
+      "name": "Nissan Sunny",
+      "model": 2020,
+      "type": "Sedan",
+      "priceDay": 900,
+      "available": true,
+      "img": "https://cdn.wheel-size.com/thumbs/0d/ab/0dab9f0781aacd35f371d29e9c979798.jpg"
+    },
+    {
+      "id": 5,
+      "name": "BMW X5",
+      "model": 2022,
+      "type": "SUV",
+      "priceDay": 3500,
+      "available": true,
+      "img": "https://www.autocollectionofmurfreesboro.com/imagetag/18064/main/l/Used-2022-BMW-X5-M-COMPETITION-PKG-2-EXECUTIVE-PKG-W124K-MSRP!!-1731345064.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Mercedes C200",
+      "model": 2023,
+      "type": "Sedan",
+      "priceDay": 4000,
+      "available": true,
+      "img": "https://www.driva.com.au/static/653e23e3738a40f28ea9068cc2541bb1/03cba/6ae75e32-f37b-4354-b5f6-c8a95eceb2d3_image4.png"
+    },
+    {
+      "id": 7,
+      "name": "Audi A4",
+      "model": 2021,
+      "type": "Sedan",
+      "priceDay": 3200,
+      "available": true,
+      "img": "https://duttongarage.com/image/Cj_ZJMeuk84ABA0CzgArPyMA/2021-Audi-A4-B9-45-TFSI-S-line-Sedan-4dr-S-tronic-7sp-quattro-2-0T-MY21-21.webp"
+    },
+    {
+      "id": 8,
+      "name": "Chevrolet Cruze",
+      "model": 2020,
+      "type": "Sedan",
+      "priceDay": 1000,
+      "available": true,
+      "img": "https://cdn.motor1.com/images/mgl/yKN4l/s1/chevrolet-cruze-lt-2020.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Honda Civic",
+      "model": 2022,
+      "type": "Sedan",
+      "priceDay": 1500,
+      "available": true,
+      "img": "https://othonda.sfo2.digitaloceanspaces.com/2022/Civic/MY22-Civic-Sedan-gallery-11-THUMB-1400-1x-A%20%281%29%20%281%29.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Ford Focus",
+      "model": 2021,
+      "type": "Sedan",
+      "priceDay": 1400,
+      "available": false,
+      "img": "https://www.carscoops.com/wp-content/uploads/2021/09/Ford-Focus-Sedan-1_result.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Toyota Yaris",
+      "model": 2020,
+      "type": "Hatchback",
+      "priceDay": 800,
+      "available": true,
+      "img": "https://static.wixstatic.com/media/2d34a4_c73909e950c4419092c377de7faa7d9e~mv2.webp/v1/fill/w_556,h_268,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/turtle_car_rental_phuket_car_hire_agency.webp"
+    },
+    {
+      "id": 12,
+      "name": "Hyundai Tucson",
+      "model": 2022,
+      "type": "SUV",
+      "priceDay": 2100,
+      "available": true,
+      "img": "https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=816,height=516,sharpen=0/https://renty.ae/uploads/car/photo/l/white_hyundai-tucson_2022_5578_main_ffd46c084bab0c0e0bcd1f82d53d4f45.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Kia Cerato",
+      "model": 2021,
+      "type": "Sedan",
+      "priceDay": 1200,
+      "available": true,
+      "img": "https://masafatrental.com/wp-content/uploads/2023/10/Kia-Cerato-2.jpg"
+    },
+    {
+      "id": 14,
+      "name": "Nissan Qashqai",
+      "model": 2023,
+      "type": "SUV",
+      "priceDay": 2300,
+      "available": true,
+      "img": "https://hertzlease.lt/app/uploads/2023/08/ikeyfodw-scaled.jpeg"
+    },
+    {
+      "id": 15,
+      "name": "BMW 320i",
+      "model": 2022,
+      "type": "Sedan",
+      "priceDay": 3300,
+      "available": true,
+      "img": "https://rent-cars.ae/public/cache/vehicle_1885/546x360/5e042aa3f95ce16c39c09cdd0bbc7613/bmw_3-series_black_2023_1885_9.webp"
+    },
+    {
+      "id": 16,
+      "name": "Mercedes E200",
+      "model": 2021,
+      "type": "Sedan",
+      "priceDay": 4200,
+      "available": false,
+      "img": "https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=816,height=516,sharpen=0/https://renty.ae/uploads/car/photo/l/black_mercedes-e-class_2021_5001_main_05eea59c7424ec66fe0b157fe5e131e1.jpg"
+    },
+    {
+      "id": 17,
+      "name": "Audi Q3",
+      "model": 2023,
+      "type": "SUV",
+      "priceDay": 3700,
+      "available": true,
+      "img": "https://static.oneclickdrive.com/uploads/mobcars/Audi-Q3-S-Line-2023_33643_37348688788-6_small.jpg"
+    },
+    {
+      "id": 18,
+      "name": "Peugeot 301",
+      "model": 2020,
+      "type": "Sedan",
+      "priceDay": 850,
+      "available": true,
+      "img": "https://s.yauto.cz/m/obrazky/p3s/0019/peugeot-301-L-1219328-d42c23138f8f222ca5b1310da5329c57.jpg"
+    },
+    {
+      "id": 19,
+      "name": "Renault Logan",
+      "model": 2021,
+      "type": "Sedan",
+      "priceDay": 800,
+      "available": true,
+      "img": "https://car-rent.ua/wp-content/uploads/2026/03/img_3101-2-scaled.jpg"
+    },
+    {
+      "id": 20,
+      "name": "Suzuki Swift",
+      "model": 2022,
+      "type": "Hatchback",
+      "priceDay": 950,
+      "available": true,
+      "img": "https://samotorlease.co.za/wp-content/uploads/2022-suzuki-swift-1-2-glx-front-feature-photo.jpg"
+    },
+    {
+      "id": 21,
+      "name": "Toyota Camry",
+      "model": 2023,
+      "type": "Sedan",
+      "priceDay": 2500,
+      "available": true,
+      "img": "https://amicar.ae/upload/iblock/8b5/f5v8lynpqm4er8zm9lqqqccy6azsajow.png"
+    },
+    {
+      "id": 22,
+      "name": "Hyundai Accent",
+      "model": 2020,
+      "type": "Sedan",
+      "priceDay": 700,
+      "available": true,
+      "img": "https://octane.rent/wp-content/uploads/2026/01/hyundai_accent_1-600x400.webp"
+    },
+    {
+      "id": 23,
+      "name": "Kia Rio",
+      "model": 2021,
+      "type": "Sedan",
+      "priceDay": 900,
+      "available": true,
+      "img": "https://rentico.ae/thumbs/800x534/storage/vehicles/image687503999a1403.34106263.webp"
+    },
+    {
+      "id": 24,
+      "name": "Nissan X-Trail",
+      "model": 2022,
+      "type": "SUV",
+      "priceDay": 2400,
+      "available": true,
+      "img": "https://www.saadatrent.com/storage/car/nissan-xtrail/nissan-x-trail-2022-oman-slide-3.webp"
+    },
+    {
+      "id": 25,
+      "name": "BMW X3",
+      "model": 2023,
+      "type": "SUV",
+      "priceDay": 3600,
+      "available": true,
+      "img": "https://rent-cars.ae/public/cache/vehicle_1444/800x533/abc8e6ae247574e3e95fe7c337dc67ab/bmw_x3_black_2023_1444_3.webp"
+    },
+    {
+      "id": 26,
+      "name": "Mercedes GLA",
+      "model": 2022,
+      "type": "SUV",
+      "priceDay": 3900,
+      "available": true,
+      "img": "https://images.turo.com/media/vehicle/images/ZVJFt7c8RAuHup20VVCAEA.1200x630.jpg"
+    },
+    {
+      "id": 27,
+      "name": "Audi A6",
+      "model": 2021,
+      "type": "Sedan",
+      "priceDay": 4100,
+      "available": false,
+      "img": "https://exfordrentacar.com/program/images/products/16335581602.jpeg"
+    },
+    {
+      "id": 28,
+      "name": "Chevrolet Malibu",
+      "model": 2020,
+      "type": "Sedan",
+      "priceDay": 1100,
+      "available": true,
+      "img": "https://rentico.ae/thumbs/800x534/storage/vehicles/image684fc31d693840.03383612.webp"
+    },
+    {
+      "id": 29,
+      "name": "Honda Accord",
+      "model": 2022,
+      "type": "Sedan",
+      "priceDay": 1600,
+      "available": true,
+      "img": "https://exfordrentacar.com/program/images/products/16793153182.jpeg"
+    },
+    {
+      "id": 30,
+      "name": "Ford Mondeo",
+      "model": 2021,
+      "type": "Sedan",
+      "priceDay": 1500,
+      "available": true,
+      "img": "https://www.automobile-catalog.com/img/pictonorzw/ford_europe/2019fordmondeo-hybrid-018.jpg"
     }
   ]
 }

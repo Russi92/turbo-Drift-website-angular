@@ -13,11 +13,13 @@ import { ForgotPassword } from './components/forgot-password/forgot-password';
 import { TotalPriceCar } from './components/total-price-car/total-price-car';
 import { Details } from './components/details/details';
 import { Otp } from './components/otp/otp';
+import { RentShow } from './components/rent-show/rent-show';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: Home },
   { path: 'service', component: Service },
+  {path : 'rent-show', component : RentShow},
   {
     path: 'cars',
     children: [
@@ -35,7 +37,6 @@ export const routes: Routes = [
       }
     ],
   },
-  {path:'otp', component:Otp},
   { path: 'more-details/:id', component: Details },
   { path: 'cars/newCars', component: NewCars },
   { path: 'cars/usedCars', component: UsedCars },
@@ -44,6 +45,7 @@ export const routes: Routes = [
   { path: 'logIn', component: Login },
   { path: 'forgotPassword', component: ForgotPassword },
   { path: 'register', component: Register },
+  {path:'otp', component:Otp},
   { path: 'total-price', component: TotalPriceCar },
   { path: '**', component: NotFound },
 ];

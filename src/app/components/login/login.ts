@@ -36,7 +36,7 @@ export class Login {
       return this.loginForm.markAllAsTouched()
     }
 
-    if(email === 'admin@gmail.com' && password === '123456789'){
+    if(email === 'admin@turboDrift.com' && password === '123456789'){
       this.router.navigateByUrl('/home')
       console.log(this.loginForm.value);
       alert('you are login ..Thank you .. Welcome To Turbo & Drift')

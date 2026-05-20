@@ -16,7 +16,7 @@ export class NewCars implements OnInit{
 @Input() userName=''
   searchText = '';
 
-  totalOrderPrice=0;
+  totalOrderPrice = 0;
 
   // newCars : InewCars[] = [] as InewCars[];
 

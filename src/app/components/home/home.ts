@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { IfeaturedCars } from '../../models/ifeatured-cars';
 import { NgOptimizedImage } from "@angular/common";
+import { HomeCart } from "../home-cart/home-cart";
 
 @Component({
   selector: 'app-home',
-  imports: [NgOptimizedImage],
+  imports: [NgOptimizedImage, HomeCart],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
@@ -52,7 +53,5 @@ export class Home {
       },
     ];
   }
-  register() {
-    this.router.navigateByUrl('/register');
-  }
+  
 }

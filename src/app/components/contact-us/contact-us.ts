@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { ToastrService } from 'ngx-toastr';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { HomeCart } from "../home-cart/home-cart";
 
 @Component({
   selector: 'app-contact-us',
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule, HomeCart],
   templateUrl: './contact-us.html',
   styleUrl: './contact-us.css',
 })
