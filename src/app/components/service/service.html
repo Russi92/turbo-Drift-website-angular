@@ -1,11 +1,11 @@
 <section class="bg-black text-white rounded-lg">
-
-    <!-- 🔥 Hero -->
+  <router-outlet></router-outlet>
+    <!-- Hero -->
     <div class="h-[300px] flex items-center justify-center bg-gradient-to-r from-red-600/55 to-black rounded-lg">
       <h1 class="text-5xl font-bold">Our Services</h1>
     </div>
   
-    <!-- 🚗 Services Cards -->
+    <!-- Services Cards -->
     <div class="w-[1200px] m-auto mt-16 grid md:grid-cols-3 gap-8 ">
   
       <!-- Card -->
@@ -27,11 +27,11 @@
         <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c" 
              class="h-[200px] w-full object-cover group-hover:scale-110 transition duration-300"/>
         <div class="p-6">
-          <h3 class="text-2xl font-bold mb-2">Car Sales</h3>
+          <h3 class="text-2xl font-bold mb-2">Sold Cars</h3>
           <p class="text-gray-400 mb-4">
             Buy your dream car with the best deals in the market.
           </p>
-          <button class="text-red-500 font-bold hover:underline cursor-pointer">Show More →</button>
+          <button class="text-red-500 font-bold hover:underline cursor-pointer" (click)="soldCars()">Show More →</button>
         </div>
       </div>
   
@@ -44,7 +44,7 @@
           <p class="text-gray-400 mb-4">
             Professional maintenance to keep your car in perfect condition.
           </p>
-          <button class="text-red-500 font-bold hover:underline cursor-pointer">Show More →</button>
+          <button class="text-red-500 font-bold hover:underline cursor-pointer" (click)="carMaintenance()">Show More →</button>
         </div>
       </div>
   
@@ -105,4 +105,5 @@
       </button>
     </div>
   
+
   </section>

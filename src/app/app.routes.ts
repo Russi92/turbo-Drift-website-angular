@@ -14,12 +14,32 @@ import { TotalPriceCar } from './components/total-price-car/total-price-car';
 import { Details } from './components/details/details';
 import { Otp } from './components/otp/otp';
 import { RentShow } from './components/rent-show/rent-show';
+import { SoldCars } from './components/sold-cars/sold-cars';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: Home },
-  { path: 'service', component: Service },
-  {path : 'rent-show', component : RentShow},
+  {path : 'service', 
+   children : [
+    {
+      path : '',
+      pathMatch : 'full',
+      loadComponent : () => import ('./components/service/service').then((s) => s.Service)
+    },
+    {
+      path : 'rent-show',
+      loadComponent : () => import ('./components/rent-show/rent-show').then((r) => r.RentShow)
+    },
+    {
+      path : 'sold-cars',
+      loadComponent : () => import ('./components/sold-cars/sold-cars').then((s) => s.SoldCars)
+    },
+    {
+      path : 'car-maintenance',
+      loadComponent : () => import ('./components/car-maintenance/car-maintenance').then((c) => c.CarMaintenance)
+    }
+  ]},
+
   {
     path: 'cars',
     children: [

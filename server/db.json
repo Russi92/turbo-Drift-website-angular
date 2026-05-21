@@ -486,5 +486,276 @@
       "available": true,
       "img": "https://www.automobile-catalog.com/img/pictonorzw/ford_europe/2019fordmondeo-hybrid-018.jpg"
     }
+  ],
+  "carsSales": [
+    {
+      "id": 1,
+      "brand": "BMW",
+      "model": "M4 Competition",
+      "year": 2024,
+      "price": 4200000,
+      "transmission": "Automatic",
+      "color": "Blue",
+      "category": "Sports",
+      "image": "https://www.stradamotorsports.com/imagetag/254/5/l/Used-2024-BMW-M4-Competition-xDrive-1724357780.jpg"
+    },
+    {
+      "id": 2,
+      "brand": "Mercedes",
+      "model": "C200",
+      "year": 2023,
+      "price": 3100000,
+      "transmission": "Automatic",
+      "color": "Silver",
+      "category": "Sedan",
+      "image": "https://contactcars.fra1.cdn.digitaloceanspaces.com/contactcars-production/Images/Large/Engines/6155b0481479a75b1631670e_b4ec6c7c-2357-48fc-9438-4803284cf2a2.jpeg"
+    },
+    {
+      "id": 3,
+      "brand": "Toyota",
+      "model": "Corolla",
+      "year": 2022,
+      "price": 1450000,
+      "transmission": "Automatic",
+      "color": "Silver",
+      "category": "Family",
+      "image": "https://i.ytimg.com/vi/YtGtXBPivpM/maxresdefault.jpg"
+    },
+    {
+      "id": 4,
+      "brand": "Audi",
+      "model": "A6",
+      "year": 2024,
+      "price": 3900000,
+      "transmission": "Automatic",
+      "color": "Silver",
+      "category": "Luxury",
+      "image": "https://hips.hearstapps.com/hmg-prod/images/2024-audi-a6-109-64761a1aaf416.jpg?crop=0.558xw:0.471xh;0.181xw,0.300xh&resize=2048:*"
+    },
+    {
+      "id": 5,
+      "brand": "Hyundai",
+      "model": "Elantra",
+      "year": 2023,
+      "price": 1250000,
+      "transmission": "Automatic",
+      "color": "Red",
+      "category": "Sedan",
+      "image": "https://auto.mallaky.com/wp-content/uploads/2022/07/2021_hyundai_elantra_sedan_limited_fq_oem_10_1280.jpg"
+    },
+    {
+      "id": 6,
+      "brand": "Kia",
+      "model": "Sportage",
+      "year": 2024,
+      "price": 2150000,
+      "transmission": "Automatic",
+      "color": "Off White",
+      "category": "SUV",
+      "image": "https://hips.hearstapps.com/hmg-prod/images/2024-kia-sportage-x-pro-prestige-awd-101-6629603c7d3da.jpg?crop=0.718xw:0.608xh;0.0994xw,0.243xh&resize=1200:*"
+    },
+    {
+      "id": 7,
+      "brand": "Chevrolet",
+      "model": "Malibu",
+      "year": 2022,
+      "price": 1650000,
+      "transmission": "Automatic",
+      "color": "Red",
+      "category": "Sedan",
+      "image": "https://di-uploads-pod34.dealerinspire.com/budclarychevy/uploads/2023/10/malibumain.jpg"
+    },
+    {
+      "id": 8,
+      "brand": "Nissan",
+      "model": "Sunny",
+      "year": 2021,
+      "price": 890000,
+      "transmission": "Automatic",
+      "color": "Silver",
+      "category": "Economy",
+      "image": "https://egypt.yallamotor.com/_next/image?url=https%3A%2F%2Fymimg1.b8cdn.com%2Fresized%2Fused_car%2F2025%2F8%2F8%2F2040563%2Fpictures%2F15611535%2Flisting_main_IMG-20250806-WA0017.jpg&w=1920&q=75"
+    },
+    {
+      "id": 9,
+      "brand": "Honda",
+      "model": "Civic",
+      "year": 2023,
+      "price": 1850000,
+      "transmission": "Automatic",
+      "color": "White",
+      "category": "Sports",
+      "image": "https://i.pinimg.com/736x/c4/e5/b4/c4e5b4647d79eb1cbf0cfc7f0ffd31b5.jpg"
+    },
+    {
+      "id": 10,
+      "brand": "Ford",
+      "model": "Mustang",
+      "year": 2024,
+      "price": 5100000,
+      "transmission": "Automatic",
+      "color": "Red",
+      "category": "Sports",
+      "image": "https://news-site-za.s3.af-south-1.amazonaws.com/images/2024/09/FordMustang2024_003.jpg"
+    },
+    {
+      "id": 11,
+      "brand": "Jeep",
+      "model": "Wrangler",
+      "year": 2022,
+      "price": 3600000,
+      "transmission": "Automatic",
+      "color": "White",
+      "category": "Off Road",
+      "image": "https://auto.mallaky.com/wp-content/uploads/2022/04/2022-jeep-wrangler-4xe-europe.jpg"
+    },
+    {
+      "id": 12,
+      "brand": "Lexus",
+      "model": "RX350",
+      "year": 2024,
+      "price": 4700000,
+      "transmission": "Automatic",
+      "color": "Red",
+      "category": "Luxury",
+      "image": "https://www.lexusstevenscreek.com/blogs/3078/wp-content/uploads/2023/09/2024-Lexus-RX-350h-Premium-AWD.jpg"
+    },
+    {
+      "id": 13,
+      "brand": "Mazda",
+      "model": "CX-5",
+      "year": 2023,
+      "price": 2100000,
+      "transmission": "Automatic",
+      "color": "Silver",
+      "category": "SUV",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThNgWBBv7YrKBECOXT5qAtAVTjOLofRsnpww&s"
+    },
+    {
+      "id": 14,
+      "brand": "Peugeot",
+      "model": "508",
+      "year": 2022,
+      "price": 1750000,
+      "transmission": "Automatic",
+      "color": "White",
+      "category": "Sedan",
+      "image": "https://auto.mallaky.com/wp-content/uploads/2021/09/Peugeot-508-2022-.webp"
+    },
+    {
+      "id": 15,
+      "brand": "Renault",
+      "model": "Megane",
+      "year": 2021,
+      "price": 1280000,
+      "transmission": "Automatic",
+      "color": "Blue",
+      "category": "Family",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-umAi72ZZJ8IzWsR-2LJE-OvEHUAW8tcQhA&s"
+    },
+    {
+      "id": 16,
+      "brand": "Volkswagen",
+      "model": "Golf GTI",
+      "year": 2024,
+      "price": 2950000,
+      "transmission": "Automatic",
+      "color": "Black",
+      "category": "Sports",
+      "image": "https://hips.hearstapps.com/mtg-prod/65a493a2c84fb90008eb688e/2024-volkswagen-gti-front-view-001.jpg"
+    },
+    {
+      "id": 17,
+      "brand": "Skoda",
+      "model": "Octavia",
+      "year": 2023,
+      "price": 1680000,
+      "transmission": "Automatic",
+      "color": "Petrol",
+      "category": "Sedan",
+      "image": "https://ackodrive-prod.ackoassets.com/image/skoda/octavia-2021-2023/images_cdn/small/Specs.webp"
+    },
+    {
+      "id": 18,
+      "brand": "Tesla",
+      "model": "Model 3",
+      "year": 2024,
+      "price": 5400000,
+      "transmission": "Automatic",
+      "color": "Black",
+      "category": "Electric",
+      "image": "https://hips.hearstapps.com/hmg-prod/images/2024-tesla-model-3-long-range-rwd-120-66feb66119c63.jpg?crop=0.571xw:0.479xh;0.146xw,0.416xh&resize=1200:*"
+    },
+    {
+      "id": 19,
+      "brand": "Porsche",
+      "model": "911 Carrera",
+      "year": 2024,
+      "price": 9800000,
+      "transmission": "Automatic",
+      "color": "Silver",
+      "category": "Supercar",
+      "image": "https://www.edmunds.com/assets/m/cs/blta7a14aa335ede638/6621fc52ca88743e8ded1504/2024_porsche_911-s-t_front.jpg"
+    },
+    {
+      "id": 20,
+      "brand": "Land Rover",
+      "model": "Defender",
+      "year": 2023,
+      "price": 6200000,
+      "transmission": "Automatic",
+      "color": "Black",
+      "category": "SUV",
+      "image": "https://di-uploads-pod15.dealerinspire.com/landrovermanhattan/uploads/2022/04/2023-Land-Rover-Defender-Price-social.jpeg"
+    },
+    {
+      "id": 21,
+      "brand": "BMW",
+      "model": "X5",
+      "year": 2024,
+      "price": 4800000,
+      "transmission": "Automatic",
+      "color": "Green",
+      "category": "SUV",
+      "image": "https://smartcdn.gprod.postmedia.digital/driving/wp-content/uploads/2023/09/2024-BMW-X5-M-eAlder-1430-scaled.jpg"
+    }
+  ],
+  "carMaintenance": [
+    {
+      "id": 1,
+      "title": "Oil Change",
+      "description": "Professional oil replacement service for better engine performance.",
+      "price": 1200,
+      "durationValue": 30,
+      "durationTime": "Mins",
+      "image": "assets/images/oil-change.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Engine Repair",
+      "description": "Complete engine diagnostics and repair service.",
+      "price": 4500,
+      "durationValue": 3,
+      "durationTime": "Hour",
+      "image": "assets/images/engine-repair.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Brake Service",
+      "description": "Brake inspection and replacement for maximum safety.",
+      "price": 1800,
+      "durationValue": 1,
+      "durationTime": "Hour",
+      "image": "assets/images/brake-service.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Battery Check",
+      "description": "Battery testing and replacement service.",
+      "price": 900,
+      "durationValue": 20,
+      "durationTime": "Mins",
+      "image": "assets/images/battery-check.jpg"
+    }
   ]
 }

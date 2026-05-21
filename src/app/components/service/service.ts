@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-service',
-  imports: [],
+  imports: [RouterOutlet],
   templateUrl: './service.html',
   styleUrl: './service.css',
 })
@@ -14,7 +14,14 @@ export class Service {
   }
 
   rentShow(){
-    this.router.navigateByUrl('/rent-show')
+    this.router.navigateByUrl('/service/rent-show')
   }
 
+  soldCars(){
+    this.router.navigateByUrl('/service/sold-cars')
+  }
+
+  carMaintenance(){
+    this.router.navigateByUrl('/service/car-maintenance')
+  }
 }

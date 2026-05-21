@@ -1,0 +1,82 @@
+
+
+<section class="bg-black text-white rounded-lg">
+
+    <!-- Header -->
+    <div class="h-[300px] flex items-center justify-center bg-gradient-to-r from-red-600/55 to-black rounded-lg">
+      <h1 class="text-5xl font-bold">Our Sold Cars</h1>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mx-5">
+        @for(sCars of soldCars; track sCars.id){
+            <div
+            class="bg-white/5 backdrop-blur-lg rounded-2xl overflow-hidden shadow-lg hover:shadow-red-500/30 transition-all duration-300 group my-8 ">
+            <div class="h-[220px] overflow-hidden relative">
+                <span class="bg-black px-3 py-1 rounded-full text-lg absolute top-0 m-1"> # {{ sCars.id }} </span>
+                <img
+                  [src]="sCars.image"
+                  alt=""
+                  width="300"
+                  height="300"
+                  class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                />
+              </div>
+
+              <div class="text-white p-5">
+                <div class="flex items-center justify-between">
+                  
+        
+                  <h2 class="text-lg font-bold">{{ sCars.brand }} {{sCars.model}}</h2>
+                </div>
+        
+                
+                <div class="p-5 space-y-4">
+                    <div class="flex items-center justify-between">
+                       
+                      <span class="text-gray-500 font-semibold">Transmission</span>
+            
+                      <span class="bg-red-800/50 rounded-full text-white px-3 py-1">
+                        {{ sCars.transmission}}
+                      </span>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                       
+                        <span class="text-gray-500 font-semibold">Model</span>
+              
+                        <span class="bg-red-800/50 rounded-full text-white px-3 py-1">
+                          {{ sCars.year}}
+                        </span>
+                      </div>
+
+                      <div class="flex items-center justify-between">
+                       
+                        <span class="text-gray-500 font-semibold">Price</span>
+              
+                        <span class="bg-red-800/50 rounded-full text-white px-3 py-1">
+                          {{ sCars.price | currency : 'EUR' : 'symbol' : '1.00'}}
+                        </span>
+                      </div>
+            
+                    <div class="flex items-center justify-between">
+                      <span class="text-gray-500 font-semibold"> Color </span>
+            
+                      <span class="px-3 py-1 rounded-full bg-red-800/50 text-white">
+                        {{ sCars.color }}
+                      </span>
+                    </div>
+            
+                    <button
+                      class="w-full mt-4 px-4 py-3 text-white rounded-xl 
+                            font-semibold bg-gray-500"
+                    >
+                    Completed Deals (Sold)
+                    </button>
+                  </div>
+
+              </div>
+
+            </div>
+        }
+    </div>
+  
+  </section>
