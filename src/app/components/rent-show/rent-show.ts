@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiRentShow } from '../../services/api-rent-show';
 import { IrentShow } from '../../models/irent-show';
-import { log } from 'console';
 import { CurrencyPipe } from '@angular/common';
 
 @Component({
