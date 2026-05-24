@@ -1,0 +1,15 @@
+@keyframes floatText {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-6px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  
+  .animate-float {
+    animation: floatText 0.5s ease-in-out infinite;
+  }
