@@ -728,7 +728,7 @@
       "price": 1200,
       "durationValue": 30,
       "durationTime": "Mins",
-      "image": "assets/images/oil-change.jpg"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpweMGfJtjAnG_oL_l20d_H1UuDISin2InlA&s"
     },
     {
       "id": 2,
@@ -737,7 +737,7 @@
       "price": 4500,
       "durationValue": 3,
       "durationTime": "Hour",
-      "image": "assets/images/engine-repair.jpg"
+      "image": "https://procto.ae/templates/auto-servis-english/images/td1%20(1).png"
     },
     {
       "id": 3,
@@ -746,7 +746,7 @@
       "price": 1800,
       "durationValue": 1,
       "durationTime": "Hour",
-      "image": "assets/images/brake-service.jpg"
+      "image": "https://bobleeautomotive.com/wp-content/uploads/2015/05/brake_service.jpg"
     },
     {
       "id": 4,
@@ -755,7 +755,25 @@
       "price": 900,
       "durationValue": 20,
       "durationTime": "Mins",
-      "image": "assets/images/battery-check.jpg"
+      "image": "https://www.verobeachtoyota.com/static/dealer-10486/VERO_BATTERY_CHECK_COUPON_2026.png"
+    },
+    {
+      "id": 5,
+      "title": "Tire Replacement",
+      "description": "Professional tire replacement and wheel balancing service for safety and performance.",
+      "price": 2500,
+      "durationValue": 45,
+      "durationTime": "Mins",
+      "image": "https://techtirerepairs.com/wp-content/uploads/2021/01/mobile_tire_repair_1200x627-1080x627.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Car Wash",
+      "description": "Complete exterior and interior car wash for a clean and fresh look.",
+      "price": 500,
+      "durationValue": 30,
+      "durationTime": "Mins",
+      "image": "https://inoutcarwash.com/wp-content/uploads/2020/11/Winter-With-a-Professional-Car-Wash-1.jpg"
     }
   ]
 }

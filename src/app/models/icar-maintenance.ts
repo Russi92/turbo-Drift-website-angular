@@ -1,7 +1,7 @@
 export interface IcarMaintenance {
     id : number,
     title : string,
-    desc : string,
+    description : string,
     price : number,
     durationValue : number,
     durationTime : string,
