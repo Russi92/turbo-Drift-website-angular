@@ -1,65 +1,31 @@
-
-<app-home-cart></app-home-cart>
-
-
 <section class="bg-amber-50/10 w-full max-w-[1500px] mx-auto mt-10 rounded-2xl p-4 sm:p-6 lg:p-8">
-  <h2 class="text-xl sm:text-2xl lg:text-3xl text-white font-bold mb-6 text-center">Featured Cars</h2>
+  <app-home-cart></app-home-cart>
+  <h2 class="text-xl sm:text-2xl lg:text-3xl text-white font-bold mb-6 text-center">
+    Featured Cars
+  </h2>
 
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
 
     @for(fCars of featuredCars; track fCars.id){
-      <div class="bg-black/40 rounded-xl p-4 text-white">
-        <img [ngSrc]="fCars.img" width="300" height="300" class="rounded-lg mb-3 w-full aspect-square object-cover"/>
-        <h3 class="text-lg sm:text-xl font-bold">{{fCars.name}}</h3>
-        <p class="text-gray-300 text-sm sm:text-base">{{fCars.description}}</p>
+      <div class="bg-black/40 rounded-xl p-3 sm:p-4 text-white hover:scale-[1.02] transition">
+        
+        <img 
+          [ngSrc]="fCars.img" 
+          width="300" 
+          height="300" 
+          class="rounded-lg mb-3 w-full aspect-square object-cover"
+        />
+
+        <h3 class="text-base sm:text-lg lg:text-xl font-bold">
+          {{fCars.name}}
+        </h3>
+
+        <p class="text-gray-300 text-xs sm:text-sm lg:text-base">
+          {{fCars.description}}
+        </p>
+
       </div>
     }
-
-  </div>
-</section>
-
-
-<section class="w-full max-w-[1500px] mx-auto mt-16 bg-amber-50/10 text-white rounded-2xl p-4 sm:p-6 lg:p-10">
-  <h2 class="text-xl sm:text-2xl lg:text-3xl font-bold text-center mb-8">What Our Customers Say</h2>
-
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-
-    <div class="bg-gray-800 p-6 rounded-xl text-center">
-      <p class="text-gray-300 mb-4 text-sm sm:text-base">"Amazing experience! Found my dream car instantly."</p>
-      <p class="font-bold">— Ahmed M.</p>
-    </div>
-
-    <div class="bg-gray-800 p-6 rounded-xl text-center">
-      <p class="text-gray-300 mb-4 text-sm sm:text-base">"Fast service and high-quality cars. Highly recommend!"</p>
-      <p class="font-bold">— Sara L.</p>
-    </div>
-
-    <div class="bg-gray-800 p-6 rounded-xl text-center">
-      <p class="text-gray-300 mb-4 text-sm sm:text-base">"Turbo & Drift made buying a car super easy and fun."</p>
-      <p class="font-bold">— Omar H.</p>
-    </div>
-
-  </div>
-</section>
-
-
-<section class="w-full max-w-[1200px] mx-auto mt-16 text-center text-white px-4">
-  <div class="flex flex-col sm:flex-row justify-around gap-6">
-
-    <div>
-      <p class="text-2xl sm:text-3xl lg:text-4xl font-bold">500+</p>
-      <p class="text-gray-300 text-sm sm:text-base">Cars Available</p>
-    </div>
-
-    <div>
-      <p class="text-2xl sm:text-3xl lg:text-4xl font-bold">1000+</p>
-      <p class="text-gray-300 text-sm sm:text-base">Happy Clients</p>
-    </div>
-
-    <div>
-      <p class="text-2xl sm:text-3xl lg:text-4xl font-bold">24/7</p>
-      <p class="text-gray-300 text-sm sm:text-base">Support</p>
-    </div>
 
   </div>
 </section>
